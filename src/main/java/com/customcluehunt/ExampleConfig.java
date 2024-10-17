@@ -16,4 +16,14 @@ public interface ExampleConfig extends Config
 	{
 		return "Will this work?";
 	}
+
+	@ConfigItem(
+			keyName = "custom",
+			name = "My own text",
+			description = "Custom message to see whenever"
+	)
+	default String custom()
+	{
+		return "Mom its working";
+	}
 }
