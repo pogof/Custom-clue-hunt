@@ -1,0 +1,26 @@
+BasedOnStyle: LLVM
+Language: Java
+IndentWidth: 4
+ColumnLimit: 150
+
+AlignAfterOpenBracket: Align
+AlignArrayOfStructures: Right
+
+
+
+
+
+
+
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+
+AllowShortBlocksOnASingleLine: Always
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
+
+BreakBeforeBraces: Attach
+
+PointerAlignment: Right
+
+
