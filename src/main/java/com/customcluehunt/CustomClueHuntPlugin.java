@@ -36,8 +36,8 @@ public class CustomClueHuntPlugin extends Plugin {
     // For attacked NPC
     private final Set<NPC> attackedNpcs = new HashSet<>();
 
-    public void writeMessageToPanel(String message) { panel.setMessage(message); }
-    public void writeWhatsEquiped(String message) { panel.getEquiped(message); }
+    //public void writeMessageToPanel(String message) { panel.setMessage(message); }
+    //public void writeWhatsEquiped(String message) { panel.getEquiped(message); }
 
     @Override
     protected void startUp() throws Exception {
@@ -111,7 +111,7 @@ public class CustomClueHuntPlugin extends Plugin {
 
         //=======================================================================================
         // Get player animation
-        if (client.getLocalPlayer().getAnimation() == AnimationID.DIG) { writeMessageToPanel("Digging at X:" + x + " Y: " + y); }
+        if (client.getLocalPlayer().getAnimation() == AnimationID.DIG) { /* writeMessageToPanel("Digging at X:" + x + " Y: " + y); */ }
         //=======================================================================================
 
 //        String allEquipment = "";
@@ -152,7 +152,7 @@ public class CustomClueHuntPlugin extends Plugin {
 
         // Convert StringBuilder to String if needed
         String allEquipmentStr = allEquipment.toString();
-        writeWhatsEquiped(allEquipmentStr);
+        //writeWhatsEquiped(allEquipmentStr);
         //======================================================================================
     }
 
